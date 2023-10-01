@@ -17,4 +17,9 @@ RUN dotnet publish "console-app-input.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "console-app-input.dll"]
+#ENTRYPOINT ["dotnet", "console-app-input.dll"]
+
+ENTRYPOINT ["dotnet"]
+
+#Default value if nothing is specified
+CMD [ "console-app-input.dll" ]
