@@ -20,7 +20,7 @@
     "MoviesAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "movies",
+      "launchUrl": "api/movies",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
